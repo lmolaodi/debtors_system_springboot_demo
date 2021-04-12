@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/debtor-demo/debtor-demo.iml" filepath="$PROJECT_DIR$/debtor-demo/debtor-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/debtors_system_springboot_demo.iml" filepath="$PROJECT_DIR$/.idea/debtors_system_springboot_demo.iml" />
+    </modules>
+  </component>
+</project>

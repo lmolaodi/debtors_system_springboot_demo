@@ -25,6 +25,11 @@ public class DebtorService {
         return debtorDao.findAll();
     }
 
+    //Get debtor by Id
+    public Optional<Debtor> getDebtorById(Long Id){
+        return debtorDao.getDebtorById(Id);
+    }
+
     //Add new debtor method
     public void addNewDebtor(Debtor debtor) {
 
@@ -47,7 +52,7 @@ public class DebtorService {
         //System.out.println(debtor);
     }
 
-    //Delete debtor by id methos
+    //Delete debtor by id method
     public void deleteDebtor(Long id) {
 
         //Check debtor id

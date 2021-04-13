@@ -7,12 +7,18 @@ import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 //Class to insert debtors to database.... trail
 @Configuration
 public class DebtorConfig {
-    @Bean
+        
+        
+        
+        
+        @Bean
     CommandLineRunner commandLineRunner(
             DebtorDao debtorDao){
         return args -> {
@@ -38,4 +44,5 @@ public class DebtorConfig {
             );
         };
     }
+
 }

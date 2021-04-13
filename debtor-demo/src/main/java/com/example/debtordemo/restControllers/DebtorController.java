@@ -5,10 +5,13 @@ import com.example.debtordemo.service.DebtorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/debtor")
+@EnableSwagger2
 public class DebtorController {
 
     private DebtorService debtorService;
@@ -21,6 +24,12 @@ public class DebtorController {
     @GetMapping
     public List<Debtor> getDebtors(){
         return debtorService.getDebtors();
+    }
+
+    @GetMapping(path = "{id}")
+    public Debtor getDebtorById(@PathVariable("id") Long id){
+        return debtorService.getDebtorById(id)
+                .orElse(null);
     }
 
     @PostMapping

@@ -25,6 +25,9 @@ public class Debtor {
     private String email;
     private Integer age;
     private LocalDate dob;
+    private String companyName;
+    private String assets;
+    private double quantity;
     private Double balance;
 
     public Debtor() {
@@ -36,6 +39,9 @@ public class Debtor {
                   String email,
                   Integer age,
                   LocalDate dob,
+                  String companyName,
+                  String assets,
+                  double quantity,
                   Double balance) {
         this.id = id;
         this.name = name;
@@ -43,15 +49,29 @@ public class Debtor {
         this.email = email;
         this.age = age;
         this.dob = dob;
+        this.companyName= companyName;
+        this.assets = assets;
+        this.quantity = quantity;
         this.balance = balance;
     }
 
-    public Debtor(String name, String surname, String email, Integer age, LocalDate dob, Double balance) {
+    public Debtor(String name,
+                  String surname,
+                  String email,
+                  Integer age,
+                  LocalDate dob,
+                  String companyName,
+                  String assets,
+                  double quantity,
+                  Double balance) {
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.age = age;
         this.dob = dob;
+        this.companyName= companyName;
+        this.assets = assets;
+        this.quantity = quantity;
         this.balance = balance;
     }
 
@@ -61,6 +81,30 @@ public class Debtor {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getAssets() {
+        return assets;
+    }
+
+    public void setAssets(String assets) {
+        this.assets = assets;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 
     public String getName() {
@@ -120,6 +164,9 @@ public class Debtor {
                 ", email='" + email + '\'' +
                 ", age=" + age +
                 ", dob=" + dob +
+                ", companyName='" + companyName + '\'' +
+                ", assets='" + assets + '\'' +
+                ", quantity=" + quantity +
                 ", balance=" + balance +
                 '}';
     }

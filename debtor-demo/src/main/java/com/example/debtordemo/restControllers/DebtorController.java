@@ -4,14 +4,13 @@ import com.example.debtordemo.model.Debtor;
 import com.example.debtordemo.service.DebtorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/debtor")
-@EnableSwagger2
+@EnableSwagger2WebMvc
 public class DebtorController {
 
     private DebtorService debtorService;

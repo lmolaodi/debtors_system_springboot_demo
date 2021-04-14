@@ -7,17 +7,12 @@ import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 //Class to insert debtors to database.... trail
 @Configuration
 public class DebtorConfig {
-        
-        
-        
-        
+
         @Bean
     CommandLineRunner commandLineRunner(
             DebtorDao debtorDao){
@@ -28,6 +23,9 @@ public class DebtorConfig {
                     "curtis.jackson@gmail.com",
                     21,
                     LocalDate.of(2000, Month.AUGUST, 14),
+                    "Rolex",
+                    "Watches",
+                    1000.00,
                     2000.00
             );
 
@@ -37,6 +35,9 @@ public class DebtorConfig {
                     "alex.brown@gmail.com",
                     26,
                     LocalDate.of(1995, Month.MARCH, 5),
+                    "Microsoft",
+                    "computers",
+                    300.00,
                     1500.00
             );
             debtorDao.saveAll(
@@ -44,5 +45,4 @@ public class DebtorConfig {
             );
         };
     }
-
 }

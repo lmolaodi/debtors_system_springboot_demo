@@ -18,8 +18,8 @@ model
 
 debtors model and the properties
 
-Name
-Surname
+Name\n
+Surname\n
 Email
 Age
 DOB - (Date of birth)

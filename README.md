@@ -6,11 +6,11 @@ This is a simple springboot project to create a debtors system.
 
 Technologies Used
 
-vscode code editor
-springboot framework
-postgresql
-Git version control
-Java
+- vscode code editor / Intellij
+- springboot framework
+- postgresql
+- Git version control
+- Java
 
 API Layers
 
@@ -18,23 +18,23 @@ model
 
 debtors model and the properties
 
-Name\n
-Surname\n
-Email
-Age
-DOB - (Date of birth)
-ComapnyName
-Assets
-Quantity
-Balance
+- Name
+- Surname
+- Email
+- Age
+- DOB - (Date of birth)
+- ComapnyName
+- Assets
+- Quantity
+- Balance
 
 RestController
 
-@GetMapping - Get all debtors in database
-@GetMapping(path = "{id}") - Get debtor by id
-@PostMapping = Register debtor
-@DeleteMapping(path =  "delete{id}") = Delete debtor by id
-@PutMapping(path = "updateDebtor/{id})
+- @GetMapping - Get all debtors in database
+- @GetMapping(path = "{id}") - Get debtor by id
+- @PostMapping = Register debtor
+- @DeleteMapping(path =  "delete{id}") = Delete debtor by id
+- @PutMapping(path = "updateDebtor/{id})
 
 Services
 

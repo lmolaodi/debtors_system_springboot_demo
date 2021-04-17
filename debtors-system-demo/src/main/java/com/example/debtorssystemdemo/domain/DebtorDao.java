@@ -1,6 +1,6 @@
-package com.example.debtordemo.domain;
+package com.example.debtorssystemdemo.domain;
 
-import com.example.debtordemo.model.Debtor;
+import com.example.debtorssystemdemo.model.Debtor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

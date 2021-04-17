@@ -1,16 +1,15 @@
-package com.example.debtordemo.restControllers;
+package com.example.debtorssystemdemo.restControllers;
 
-import com.example.debtordemo.model.Debtor;
-import com.example.debtordemo.service.DebtorService;
+import com.example.debtorssystemdemo.model.Debtor;
+import com.example.debtorssystemdemo.service.DebtorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/debtor")
-@EnableSwagger2WebMvc
+
 public class DebtorController {
 
     private DebtorService debtorService;
@@ -31,7 +30,7 @@ public class DebtorController {
                 .orElse(null);
     }
 
-    @PostMapping
+    @PostMapping(path = "addDebtor/")
     public void registerDebtor(@RequestBody Debtor debtor){
         debtorService.addNewDebtor(debtor);
     }

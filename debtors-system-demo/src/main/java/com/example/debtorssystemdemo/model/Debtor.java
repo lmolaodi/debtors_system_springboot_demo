@@ -1,4 +1,4 @@
-package com.example.debtordemo.model;
+package com.example.debtorssystemdemo.model;
 
 
 import javax.persistence.*;

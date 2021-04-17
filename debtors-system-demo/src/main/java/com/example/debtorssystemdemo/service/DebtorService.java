@@ -1,7 +1,7 @@
-package com.example.debtordemo.service;
+package com.example.debtorssystemdemo.service;
 
-import com.example.debtordemo.domain.DebtorDao;
-import com.example.debtordemo.model.Debtor;
+import com.example.debtorssystemdemo.domain.DebtorDao;
+import com.example.debtorssystemdemo.model.Debtor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

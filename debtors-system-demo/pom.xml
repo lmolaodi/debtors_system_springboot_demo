@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>debtor-demo</artifactId>
+	<artifactId>debtors-system-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>debtor-demo</name>
-	<description>Debtors project for Spring Boot</description>
+	<name>debtors-system-demo</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>16</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -32,19 +32,21 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-    	<groupId>io.springfox</groupId>
-    	<artifactId>springfox-swagger2</artifactId>
-    	<version>2.10.5</version>
-		</dependency>
-		<dependency>
-			 <groupId>io.springfox</groupId>
-    		<artifactId>springfox-swagger-ui</artifactId>
-   		 <version>2.10.5</version>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.5.2</version>
 		</dependency>
 	</dependencies>
 

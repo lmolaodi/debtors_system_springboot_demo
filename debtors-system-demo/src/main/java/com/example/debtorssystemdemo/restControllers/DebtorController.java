@@ -20,11 +20,11 @@ public class DebtorController {
     }
 
     @GetMapping
-    public List<Debtor> getDebtors(){
+    public List<Debtor> getAllDebtors(){
         return debtorService.getDebtors();
     }
 
-    @GetMapping(path = "{id}")
+    @GetMapping(path = "getDebtorById/{id}")
     public Debtor getDebtorById(@PathVariable("id") Long id){
         return debtorService.getDebtorById(id)
                 .orElse(null);
@@ -46,7 +46,7 @@ public class DebtorController {
             @RequestParam(required = false) String name,
             @RequestParam(required = false) String surname,
             @RequestParam(required = false) String email,
-            @RequestParam(required = false) double balance) {
+            @RequestParam(required = false) Double balance) {
                 debtorService.updateDebtorDetails(id, name, surname, email, balance);
     }
 }

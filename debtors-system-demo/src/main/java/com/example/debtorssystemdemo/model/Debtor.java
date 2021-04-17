@@ -27,7 +27,7 @@ public class Debtor {
     private LocalDate dob;
     private String companyName;
     private String assets;
-    private double quantity;
+    private Double quantity;
     private Double balance;
 
     public Debtor() {
@@ -41,7 +41,7 @@ public class Debtor {
                   LocalDate dob,
                   String companyName,
                   String assets,
-                  double quantity,
+                  Double quantity,
                   Double balance) {
         this.id = id;
         this.name = name;
@@ -62,7 +62,7 @@ public class Debtor {
                   LocalDate dob,
                   String companyName,
                   String assets,
-                  double quantity,
+                  Double quantity,
                   Double balance) {
         this.name = name;
         this.surname = surname;
@@ -99,7 +99,7 @@ public class Debtor {
         this.assets = assets;
     }
 
-    public double getQuantity() {
+    public Double getQuantity() {
         return quantity;
     }
 

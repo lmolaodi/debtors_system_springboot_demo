@@ -1,5 +1,6 @@
-package com.example.debtorssystemdemo.domain;
+package com.example.debtorssystemdemo.configuration;
 
+import com.example.debtorssystemdemo.domain.DebtorDao;
 import com.example.debtorssystemdemo.model.Debtor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
